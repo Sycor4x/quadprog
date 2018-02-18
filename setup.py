@@ -52,5 +52,6 @@ setup(
     long_description="\n".join(DOCLINES[2:]),
     license='GPLv2+',
     zip_safe=False,
+    install_requires=["Cython>=0.27.3"],
     ext_modules=cythonize(extensions),
 )
